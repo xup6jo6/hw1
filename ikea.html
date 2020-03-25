@@ -7,26 +7,30 @@
         background-image:url("res/background.jpg");
       }
       .home_img{
-        /*margin:250px 500px 0px;*/
-        margin-top:200px;
-        margin-left:33%;
-        position:relative;
+        position:fixed;
+        top: 30%;
+        right: 35%;
+        width: 35%;
+        /*border: 3px solid #73AD21;*/
       }
-      .enter{
-        position:relative;
-        top:10px;
-        /*left:880px;*/
-        margin-left:58%;
-        width:400px;
-      }  
+      .click_me{
+        position: fixed;
+        left: 56%;
+	width:9%;
+	top:55%;
+      }
+      .arrow{
+	position:fixed;
+        left:66%;
+	width:2%;
+	top:55%;
+      }	 
     </style>
   </head>
-  
+
   <body>
     <img src = "res/logo.png" alt = "ikea" class="home_img" >
-    <div class = "enter" >
-      <a href = "countDown.html"><img src="res/clickhere.png"></a> 
-      <a href = "countDown.html"><img src="res/箭頭.png"></a> 
-    </div>
+      <a href = "countDown.html"><img src="res/clickhere.png" class = "click_me"></a>
+      <a href = "countDown.html"><img src="res/箭頭.png" class = "arrow"></a>
   </body>
 </html>

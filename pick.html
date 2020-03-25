@@ -7,33 +7,57 @@
 				background-image:url("res/background.jpg");
 			}
 			.img_L{
-				position:relative;
-        margin:250px 50px 0px 120px;
-        /*margin-top:250px;
-        margin-left:15%;*/
+				position:fixed;
+        			/*margin:250px 50px 0px 120px;*/
+				left:7%;
+				top:35%;
+				width:15%;
 				transition: all 1s ease-out;
 			}
 			.img_L:hover{
-				transform:scale(1.2,1.2);
+				animation:zoom 2.5s infinite;
 			}
-			.img_C{
-                                position:relative;
-                                margin:250px 50px 0;
+			.img_CL{
+                                position:fixed;
+                                /*margin:250px 50px 0;*/
+				left:31%;
+				top:35%;
+				width:15%;
 				transition: all 1s ease-out;
                         }
-                        .img_C:hover{
-                                transform:scale(1.2,1.2);
+                        .img_CL:hover{
+				animation:zoom 2.5s infinite;
                         }
+			.img_CR{
+                                position:fixed;
+                                /*margin:250px 50px 0;*/
+                                left:55%;
+                                top:35%;
+                                width:15%;
+                                transition: all 1s ease-out;
+                        }
+                        .img_CR:hover{
+                                /*transform:scale(1.2,1.2);*/
+				animation:zoom 2.5s infinite;
+			}
 			.img_R{
-                                position:relative;
-                                /*margin:250px 120px 0 50px*/
-                                margin-top:250px;
-                                margin-left:50px;
+                                position:fixed;
+                                /*margin-top:250px;
+                                margin-left:50px;*/
+				left:79%;
+				top:35%;
+				width:15%;
                                 transition: all 1s ease-out;
                         }
                         .img_R:hover{
-                                transform:scale(1.2,1.2);
+                                /*transform:scale(1.2,1.2);*/
+				animation:zoom  2.5s infinite;
                         }
+			@keyframes zoom{
+                        	0% {transform:scale(1,1);}
+				50% {transform:scale(1.2,1.2);}
+				100% {transform:scale(1,1);}
+			}
 		</style>
 	</head>
 
@@ -42,10 +66,10 @@
 			<img src = "res/1-1.png" class = "img_L" >
 		</a>
 		<a href = "light.html">
-			<img src = "res/2-1.png" class = "img_C" >
+			<img src = "res/2-1.png" class = "img_CL" >
 		</a>
 		<a href =  "sofa.html">
-			<img src = "res/3-1.png" class = "img_C" >
+			<img src = "res/3-1.png" class = "img_CR" >
 		</a>
 		<a href =  "bed.html">
                 	<img src = "res/4-1.png" class = "img_R" >
